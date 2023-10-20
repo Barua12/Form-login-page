@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="text-align: center;"> Survey Form</h1>
+    <form id="surveyForm" onsubmit="submitForm(event)">
+        <label for="firstName">First Name:</label>
+        <input id="firstName" type="text" required>
+
+        <label for="lastName">Last Name:</label>
+        <input id="lastName" type="text" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input id="dob" type="date" required>
+
+        <label for="country">Country:</label>
+        <select id="country" required>
+            <option value="">Select Country</option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="Canada">Canada</option>
+            <option value="Australia">Australia</option>
+            <!-- Add more countries as needed -->
+        </select>
+
+        <label>Gender:</label>
+        <input type="checkbox" id="male" value="Male"> Male
+        <input type="checkbox" id="female" value="Female"> Female
+
+        <label for="profession">Profession:</label>
+        <input id="profession" type="text" required>
+
+        <label for="email">Email:</label>
+        <input id="email" type="email" required>
+
+        <label for="mobile">Mobile Number:</label>
+        <input id="mobile" type="tel" required>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+body {
+    background-color: aqua;
+    text-align: left;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+}
